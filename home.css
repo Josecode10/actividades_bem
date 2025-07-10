@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo1: #EA906C;
+    --fondo2: #EEE2DE;
+}
+
+body {
+    background-color: var(--fondo1);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main {
+    border: 5px groove #000;
+    max-width: 730px;
+    margin: 30px auto;
+    height: auto;
+    background-color: #fff;
+    background-color: var(--fondo2);
+    text-align: center;
+}
+
+.barralateral { /* 13. Componente de barra lateral sidebar.  */
+    display: inline-block;
+    border: 3px groove #000;
+    width: 60px;
+    height: 340px;
+    position: relative;
+    margin-top: 5px;
+    background-color: var(--fondo1);
+}
+
+.barralateral--icon_hogar {
+    position: absolute;
+    left: 18px;
+    top: 10px;
+}
+
+.barralateral--icon_salida {
+    position:absolute;
+    left: 18px;
+    bottom: 10px;
+}
+
+.barralateral div i {
+    color: #000;
+}
+
+.card,
+.caja { /* 1. Componente de tarjeta de producto.  */
+    width: 300px;
+    text-align: center;
+    border: 3px groove #000;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card__imagen,
+.caja__imagen { /* 5. Componente de galería de imágenes. */
+    height: 200px;
+    width: 250px;
+    margin: 0 auto 20px;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__botones {
+    margin: 6px;
+}
+
+.card__botones--botones_izquierda,
+.card__botones--botones_derecha {
+    border: none;
+    height: 23px;
+    width: 100px;
+    border-radius: 5%;
+}
+
+.card__botones--botones_izquierda {
+    background-color: var(--fondo1);
+    color: #fff;
+}
+
+.card__botones--botones_derecha {
+    background-color: #B2B2B2;
+    color: #fff;
+}
+
+.card__descripcion {
+    list-style-position: inside;
+}
+
+.card__descripcion ul li {
+    list-style-type: none; /* 4. Componente de lista de tareas. */
+}
+
+/* 2. Componente de menú de navegación. */
+
+.menu {
+    width: auto;
+    height: 40px;
+    border: 1px groove #000;
+    position: relative;
+    margin: 10px 10px 25px 10px;
+    font-style: normal;
+    background-color: var(--fondo1);
+}
+
+.menu div {
+    position: absolute;
+}
+
+.menu__categoria,
+.piepagina__izquierda { /* 10.Componente de selector de categorías. */
+    font-weight: bold;
+    left: 10px;
+    top: 10px;
+}
+
+.menu__derecha,
+.piepagina__derecha {
+    right: 0px;
+    top: 10px;
+}
+
+menu div a,
+.piepagina div a{
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    margin: 0px 8px 0px 8px;
+    color: #000;
+}
+
+.caja__form--boton { /* 3. Componente de formulario de contacto.  */
+    background-color: var(--fondo1);
+    color: #fff;
+    border: none;
+    height: 23px;
+    width: 60px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.caja_video_pestanas {
+    /* border: 1px solid #000; */
+    width: auto;
+    height: 200px;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.video, /* 12. Componente de reproductor de video. */
+.menu_pestanas { /* 9. Componente de pestañas (tabs).  */
+    /* border: 1px solid #000; */
+    display: inline-block;
+    width: 300px;
+    height: 170px;
+    vertical-align: top;
+}
+
+.menu_pestanas input[type="radio"] {
+    display: none;
+}
+
+.menu_pestanas input[type="radio"]:checked + label {
+    background-color: var(--fondo1);
+    border-radius: 10%;
+}
+
+.contenido-pestana {
+    border: 1px solid black;
+    padding: 15px;
+    display: none;
+}
+
+.contenido-pestana {
+    list-style-position: inside;
+}
+
+#pestana1:checked ~ .contenido-pestana[for="pestana1"],
+#pestana2:checked ~ .contenido-pestana[for="pestana2"],
+#pestana3:checked ~ .contenido-pestana[for="pestana3"] {
+    display: block;
+}
+
+
+.piepagina { /* 8. Componente de pie de página. */
+    width: auto;
+    height: 40px;
+    border: 1px groove #000;
+    position: relative;
+    margin: 10px 10px 50px 10px;
+    font-style: normal;
+    background-color: var(--fondo1);
+    text-decoration: none;
+    position: relative;
+}
+
+.piepagina__izquierda,
+.piepagina__derecha { /* 8. Componente de pie de página. */
+    display: inline-block;
+    position: absolute;
+}
+
+.piepagina div a i,
+.piepagina div a label { /* 8. Componente de pie de página. */
+    color: #000;
+}
+
+.piepagina div a label { /* 8. Componente de pie de página. */
+    margin-right: 5px;
+}
+

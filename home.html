@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <menu class="menu">
+            <div class="menu__categoria">
+                <label for="">Categorias</label>
+                <select name="Seleccionar" id="">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="">Opcion 1</option>
+                    <option value="">Opcion 2</option>
+                    <option value="">Opcion 3</option>
+                    <option value="">Opcion 4</option>
+                </select>
+            </div>
+            <div class="menu__derecha">
+                <a href="">Tarjetas</a>
+                <a href="">Podcast</a>
+                <a href="carro.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </menu>
+        
+        <aside class="barralateral">
+            <div class="barralateral--icon_hogar">
+                <a href=""><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="barralateral--icon_salida">
+                <a href=""><i class="fa-solid fa-door-open"></i></a>
+            </div>
+        </aside>
+
+
+        <div class="card">
+            <h1 .card__titulo >Astronauta</h1>
+            <div class="card__imagen">
+                <img src="img/astronaut.png" alt="" >
+            </div>
+            <div class="card__descripcion">
+                <ul>
+                    <li><i class="fa-solid fa-rocket"></i>  Viajero del espacio.</li>
+                    <li><i class="fa-solid fa-rocket"></i>  Conocimiento en armas.</li>
+                </ul>
+            </div>
+            <div class="card__botones">
+                <button class="card__botones--botones_izquierda">Saber más</button>
+                <button class="card__botones--botones_derecha">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="caja">
+            <h1>Boletines</h1>
+            <div class="caja__imagen">
+                <img src="img/rocket.png" alt="">
+            </div>
+            <form class="caja__form" action="/submit">
+                <div class="caja__form--email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="useremail" placeholder="correo electrónico" required>
+                </div>
+                <div class="caja__form--frecuencia">
+                    <label for="">Frecuencia de boletines: </label>
+                    <select name="Frecuencia" id="">
+                        <option value="">Diario</option>
+                        <option value="">Semanal</option>
+                        <option value="">Mensual</option>
+                    </select>
+                </div>
+                <button class="caja__form--boton" type="submit">Launch!</button> 
+            </form>
+        </div>
+
+        <div class="caja_video_pestanas">
+            <div class="video">
+                <iframe width="290" height="170" src="https://www.youtube.com/embed/_fH7wLbxc6E?si=ACNNnCrYDJY31qKG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="menu_pestanas">
+                
+                <input type="radio" id="pestana1" name="tabs" checked>
+                <label for="pestana1">
+                    Pestaña Uno
+                </label>
+
+                <input type="radio" id="pestana2" name="tabs">
+                <label for="pestana2">
+                    Pestaña Dos
+                </label>
+
+                <input type="radio" id="pestana3" name="tabs">
+                <label for="pestana3">
+                    Pestaña Tres
+                </label>
+
+                <div class="contenido-pestana" for="pestana1">
+                    <p>Contenido de la pestaña uno.</p>
+                    <ul>
+                        <li>Tarea uno.</li>
+                        <li>Tarea dos.</li>
+                        <li>Tarea tres.</li>
+                    </ul>
+                </div>
+                
+                <div class="contenido-pestana" for="pestana2">
+                    <p>Contenido de la pestaña dos.</p>
+                    <ul>
+                        <li>Tarea uno.</li>
+                        <li>Tarea dos.</li>
+                        <li>Tarea tres.</li>
+                    </ul>
+                </div>
+                
+                <div class="contenido-pestana" for="pestana3">
+                    <p>Contenido de la pestaña tres.</p>
+                    <ul>
+                        <li>Tarea uno.</li>
+                        <li>Tarea dos.</li>
+                        <li>Tarea tres.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer class="piepagina">
+            <div class="piepagina__izquierda">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="piepagina__derecha">
+                <a href=""><label for="">Contactanos</label><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </footer>
+    </main>
+
+    
+</body>
+</html>
