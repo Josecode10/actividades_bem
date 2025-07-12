@@ -9,14 +9,14 @@
     --fondo2: #EEE2DE;
 }
 
-body {
+body { /*Dar estilos al todos los elementos contenidos en la etiqueda body*/
     background-color: var(--fondo1);
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-main {
+main { /* BLOQUE - Dar estilos al todos los elementos contenidos en la etiqueda main*/
     border: 5px groove #000;
     max-width: 730px;
     margin: 30px auto;
@@ -26,7 +26,7 @@ main {
     text-align: center;
 }
 
-.barralateral { /* 13. Componente de barra lateral sidebar.  */
+.barralateral { /* BLOQUE - 13. Componente de barra lateral sidebar.  */
     display: inline-block;
     border: 3px groove #000;
     width: 60px;
@@ -36,24 +36,24 @@ main {
     background-color: var(--fondo1);
 }
 
-.barralateral--icon_hogar {
+.barralateral--icon_hogar { /* ELEMENTO DEL BLOQUE BARRALATERAL*/
     position: absolute;
     left: 18px;
     top: 10px;
 }
 
-.barralateral--icon_salida {
+.barralateral--icon_salida { /* ELEMENTO DEL BLOQUE BARRALATERAL */
     position:absolute;
     left: 18px;
     bottom: 10px;
 }
 
-.barralateral div i {
+.barralateral div i { /* estilos aplicados a los elementos i contenido en un div y la clase barralateral */
     color: #000;
 }
 
 .card,
-.caja { /* 1. Componente de tarjeta de producto.  */
+.caja { /* bloques CARD y CAJA 1. Componente de tarjeta de producto.  */
     width: 300px;
     text-align: center;
     border: 3px groove #000;
@@ -63,7 +63,7 @@ main {
 }
 
 .card__imagen,
-.caja__imagen { /* 5. Componente de galería de imágenes. */
+.caja__imagen { /* elementos 5. Componente de galería de imágenes. */
     height: 200px;
     width: 250px;
     margin: 0 auto 20px;
@@ -74,12 +74,12 @@ img {
     object-fit: cover;
 }
 
-.card__botones {
+.card__botones { /* Elemento del bloque card */
     margin: 6px;
 }
 
 .card__botones--botones_izquierda,
-.card__botones--botones_derecha {
+.card__botones--botones_derecha { /* modificadores del elemento card__botones */
     border: none;
     height: 23px;
     width: 100px;
@@ -128,7 +128,7 @@ img {
 }
 
 .menu__derecha,
-.piepagina__derecha {
+.piepagina__derecha { /* Elementos de los bloques menu y piepagina*/
     right: 0px;
     top: 10px;
 }
@@ -144,7 +144,7 @@ menu div a,
     color: #000;
 }
 
-.caja__form--boton { /* 3. Componente de formulario de contacto.  */
+.caja__form--boton { /* modificador del elemento caja__form 3. Componente de formulario de contacto.  */
     background-color: var(--fondo1);
     color: #fff;
     border: none;
@@ -172,11 +172,11 @@ menu div a,
     vertical-align: top;
 }
 
-.menu_pestanas input[type="radio"] {
+.menu_pestanas input[type="radio"] { /*oculta el input */
     display: none;
 }
 
-.menu_pestanas input[type="radio"]:checked + label {
+.menu_pestanas input[type="radio"]:checked + label { /* Aplica estilos únicamente a la pestaña siguiente con el selector de hermano adyacente*/
     background-color: var(--fondo1);
     border-radius: 10%;
 }
