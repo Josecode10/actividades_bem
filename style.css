@@ -203,7 +203,7 @@ menu div a,
     height: 40px;
     border: 1px groove #000;
     position: relative;
-    margin: 10px 10px 50px 10px;
+    margin: 10px 10px 10px 10px;
     font-style: normal;
     background-color: var(--fondo1);
     text-decoration: none;
@@ -224,4 +224,38 @@ menu div a,
 .piepagina div a label { /* 8. Componente de pie de página. */
     margin-right: 5px;
 }
+
+/* ------- Estilos para el index_carro.html ------- */
+
+/* 14. Componente de resumen de carrito.  */
+
+.encabezado { /* 8. Componente de pie de página. */
+    width: auto;
+    height: 40px;
+    border: 1px groove #000;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    font-style: normal;
+    background-color: var(--fondo1);
+    text-decoration: none;
+    position: relative;
+}
+
+.encabezado__home {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+
+.encabezado div a i {
+    color: #000;
+}
+
+.tabla { /* 7. Componente de tabla de datos. */
+    width: 300px;
+    height: 200px;
+    border: 4px dashed #000;
+    margin: 50px auto;
+    padding: 30px;
+} 
 
