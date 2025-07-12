@@ -185,15 +185,12 @@ menu div a,
     border: 1px solid black;
     padding: 15px;
     display: none;
-}
-
-.contenido-pestana {
     list-style-position: inside;
 }
 
 #pestana1:checked ~ .contenido-pestana[for="pestana1"],
 #pestana2:checked ~ .contenido-pestana[for="pestana2"],
-#pestana3:checked ~ .contenido-pestana[for="pestana3"] {
+#pestana3:checked ~ .contenido-pestana[for="pestana3"] { /* Selecciona todos los hermanos generales de "pestana1:checked" que tengan la clase "contenido-pestana"*/
     display: block;
 }
 
